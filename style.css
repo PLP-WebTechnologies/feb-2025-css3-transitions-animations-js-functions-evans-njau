@@ -1,0 +1,47 @@
+/* General styling */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Hover animation */
+  button:hover {
+    transform: scale(1.05);
+    background-color: #6ee7b7;
+  }
+  
+  /* Bounce animation using keyframes */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Animation class */
+  .bounce {
+    animation: bounce 0.5s;
+  }
+  
+  /* Light theme */
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Dark theme */
+  body.dark {
+    background-color: #111;
+    color: #eee;
+  }
+  
